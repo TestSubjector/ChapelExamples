@@ -9,7 +9,7 @@ var count: int = 0;
 forall i in 3..999 with ( + reduce count){
 
     //Chapel doesn't have pre/post-increment/decrement operators [ ++,--]
-    //Also notice that that even single statements in 'if/else' block require braces in Chapel
+    //Also notice that even single statements in 'if/else' block require braces in Chapel
     if( i % 3 == 0) {
         count += i;
     } else if ( i % 5 == 0) {
